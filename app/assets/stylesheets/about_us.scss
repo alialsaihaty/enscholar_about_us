@@ -1,3 +1,69 @@
 // Place all the styles related to the about_us controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+.about-top{
+  background: url(top.png) no-repeat center center;
+  padding-top: 300px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  background-size: cover;
+  position: relative;
+  // text-align: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-top{
+
+  .p-slogan{
+    color: white;
+    text-align: center;
+  }
+  .intro-message {
+    position: relative;
+    text-align: center;
+    bottom: 160px;
+    margin-right: 145px;
+  }
+}
+
+.intro-message > h2 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+
+img.img-ensch {
+  width: 117px;
+  margin-left: 56px;
+  position: absolute;
+  top: 25px;
+}
+
+img.img-tryit {
+    width: 84px;
+    margin-left: 191px;
+    position: absolute;
+    top: 25px;
+}
+
+.row.about-margin-bottom-100 {
+  text-align: center;
+    margin-bottom: 0;
+}
+
+img.img-enscholar_tryit {
+    width: 20%;
+}
+
+.col-xs-12 {
+    .no-left-mar{
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+}

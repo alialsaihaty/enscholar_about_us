@@ -24,6 +24,25 @@
   .about-team-image-size {
     width: 75%;
   }
+  .about-top{
+    padding-top: 8px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 20px;
+    min-height: 108px;
+  }
+  img.img-ensch {
+    width: 73px;
+    margin-left: 22px;
+    top: 17px;
+  }
+  img.img-tryit {
+    width: 45px;
+    margin-left: 108px;
+    position: absolute;
+    top: 17px;
+  }
+  .about-top .intro-message {
+    display: none;
+  }
 }
 
 .about-no-padding {
