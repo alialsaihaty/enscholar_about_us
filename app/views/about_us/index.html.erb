@@ -73,32 +73,55 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-              <div class="col-xs-12 no-left-mar">
+              <div class="col-xs-12 no-left-mar desktop">
                 <div class="col-xs-4 no-left-mar">
                   <strong>Get in Touch</strong><br>
                   <a class="about-text-primary" href="mailto:info@enscholar.com">info@enscholar.com</a>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 sec">
                   <strong>Partner with Us</strong><br>
                   <a class="about-text-primary" href="mailto:pr@enscholar.com">pr@enscholar.com</a>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 thir">
                   <strong>Work with Us</strong><br>
                   <a class="about-text-primary" href="mailto:hr@enscholar.com">hr@enscholar.com</a>
                 </div>
               </div>
+
+              <div class="col-xs-12 no-left-mar mobile">
+                <div class="col-xs-12 no-left-mar">
+                  <strong>Get in Touch</strong><br>
+                  <a class="about-text-primary" href="mailto:info@enscholar.com">info@enscholar.com</a>
+                </div>
+                <div class="col-xs-12 no-left-mar">
+                  <strong>Partner with Us</strong><br>
+                  <a class="about-text-primary" href="mailto:pr@enscholar.com">pr@enscholar.com</a>
+                </div>
+                <div class="col-xs-12 no-left-mar">
+                  <strong>Work with Us</strong><br>
+                  <a class="about-text-primary" href="mailto:hr@enscholar.com">hr@enscholar.com</a>
+                </div>
+              </div>
+
             <p><span class="about-text-black-primary"><strong>Name:</strong></span>
               enScholar ('S' is capitalized; pronounced like 'engage')
             </p>
             <p><span class="about-text-black-primary"><strong>Registered non-profit name:</strong></span>
               The enScholar Educational Foundation
             </p>
-            <p><span class="about-text-black-primary"><strong>Websites:</strong></span>
+            <p class="desktop"><span class="about-text-black-primary"><strong>Websites:</strong></span>
               &nbsp; &nbsp; &nbsp; &nbsp;
               <%= link_to "www.enscholar.com", "https://enscholar.com/", class:"about-text-primary", :target => "_blank" %>
               &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;
               <%= link_to "www.gotryit.org", "https://gotryit.org/", class:"about-text-primary", :target => "_blank" %>
             </p>
+
+            <p class="mobile"><span class="about-text-black-primary"><strong>Websites:</strong></span>
+              <%= link_to "www.enscholar.com", "https://enscholar.com/", class:"about-text-primary", :target => "_blank" %>
+              |
+              <%= link_to "www.gotryit.org", "https://gotryit.org/", class:"about-text-primary", :target => "_blank" %>
+            </p>
+
             <p><span class="about-text-black-primary"><strong>25 words:</strong></span>
               enScholar is a non-profit changing how students find a career path through easy-to-use,
               video-guided tools that teach self-exploration and critical thinking.
@@ -250,6 +273,9 @@
   </div>
 </div>
 
-<div class="row about-margin-bottom-100">
+<div class="row about-margin-bottom-100 desktop">
+  <%= link_to image_tag("enscholar_tryit.png", class: "img-enscholar_tryit"), "https://enscholar.com/", :target => "_blank" %>
+</div>
+<div class="row about-margin-bottom-100 mobile">
   <%= link_to image_tag("enscholar_tryit.png", class: "img-enscholar_tryit"), "https://enscholar.com/", :target => "_blank" %>
 </div>

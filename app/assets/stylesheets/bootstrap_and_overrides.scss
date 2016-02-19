@@ -15,7 +15,12 @@
   width: 242px;
 }
 
-@media only screen and (max-width: 736px) {
+.mobile {
+  display: none;
+}
+
+/* iPhone 6 landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .about-why-bg-image {
     background: none;
     background-color: #4AB2BF;
@@ -43,14 +48,55 @@
   .about-top .intro-message {
     display: none;
   }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .row.about-margin-bottom-100 {
+    text-align: center;
+      margin-bottom: auto;
+  }
+  img.img-enscholar_tryit {
+    width: 54%;
+  }
+  .about-image {
+    margin-top: 18px !important;
+    float: right;
+  }
 }
+
+
+/* iPhone 6 landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  img.img-enscholar_tryit {
+    width: 37%;
+  }
+  .about-image {
+    margin-top: 18px !important;
+    float: none !important;
+  }
+}
+
+/* iPhone 6 Plus landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+  img.img-enscholar_tryit {
+    width: 37%;
+  }
+  .about-image {
+    margin-top: 18px !important;
+    float: none !important;
+  }
+}
+
 
 .about-no-padding {
   padding: 0;
 }
 
 .about-image {
-  margin-top: 18px;
+  margin-top: 48px;
   float: right;
 }
 
