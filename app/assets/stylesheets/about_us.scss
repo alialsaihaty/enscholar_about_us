@@ -4,7 +4,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 
 .about-top{
-  background: url(top.png) no-repeat center center;
+  background: url("/assets/top.png") no-repeat center center;
+  // background-image: asset-data-url("top.png");
+  // background-image: url(image-path('top.png') no-repeat center center);
+  // background-image: image-url("top.png") no-repeat center center;
   padding-top: 300px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
   background-size: cover;
