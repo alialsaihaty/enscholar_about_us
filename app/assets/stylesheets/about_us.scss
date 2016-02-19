@@ -4,7 +4,8 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 
 .about-top{
-  background: url("/assets/top.png") no-repeat center center;
+  // background: url(top.png) no-repeat center center;
+  background: image-url("top.png") no-repeat center center; 
   // background-image: asset-data-url("top.png");
   // background-image: url(image-path('top.png') no-repeat center center);
   // background-image: image-url("top.png") no-repeat center center;
