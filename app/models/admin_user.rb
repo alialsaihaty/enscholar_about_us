@@ -1,5 +1,9 @@
 class AdminUser < ActiveRecord::Base
-  after_create { |admin| admin.send_reset_password_instructions }
+
+  #uncomment this to let a new AdminUser create his/her password
+  # after_create { |admin| admin.send_reset_password_instructions }
+
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,
